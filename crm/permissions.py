@@ -1,4 +1,9 @@
+import logging
+
 from rest_framework.permissions import BasePermission, SAFE_METHODS
+
+
+logger = logging.getLogger(__name__)
 
 
 class IsAdminOrReadOnly(BasePermission):
@@ -20,8 +25,9 @@ class IsSalesContact(BasePermission):
 
     def has_object_permission(self, request, view, obj):
         try:
-            return obj.contract.sales_contact == request.user
+            return obj.client.sales_contact == request.user
         except AttributeError:
+            logger.exception("No attribute called sales_contact")
             return obj.sales_contact == request.user
 
 

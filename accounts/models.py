@@ -5,6 +5,7 @@ from django.db import models
 DEPARTMENTS_CHOICES = [
     ("SALES", "Sales"),
     ("SUPPORT", "Support"),
+    ("MANAGEMENT", "Management"),
     ("OTHERS", "Others")
 ]
 

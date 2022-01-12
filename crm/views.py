@@ -1,8 +1,13 @@
+import logging
+
 from rest_framework.viewsets import ModelViewSet
 
 from .models import Client, Contract, Event
 from .serializers import ClientSerializer, ContractSerializer, EventSerializer
-from .permissions import IsAdminOrReadOnly, IsSalesContact, IsSupportContact
+from .permissions import IsSalesContact, IsSupportContact
+
+
+logger = logging.getLogger(__name__)
 
 
 class ClientViewSet(ModelViewSet):
