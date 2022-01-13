@@ -29,7 +29,8 @@ class Client(models.Model):
     date_created = models.DateTimeField(auto_now_add=True)
     date_updated = models.DateTimeField(auto_now=True, blank=True, null=True)
     sales_contact = models.ForeignKey(settings.AUTH_USER_MODEL,
-                                      on_delete=models.DO_NOTHING)
+                                      on_delete=models.SET_NULL,
+                                      null=True)
 
     def __str__(self):
         return self.first_name + " " + self.last_name
@@ -44,8 +45,8 @@ class Contract(models.Model):
     A model that represents a contract
     """
     sales_contact = models.ForeignKey(settings.AUTH_USER_MODEL,
-                                      on_delete=models.DO_NOTHING)
-    client = models.ForeignKey(Client, on_delete=models.DO_NOTHING)
+                                      on_delete=models.RESTRICT)
+    client = models.ForeignKey(Client, on_delete=models.RESTRICT)
     date_created = models.DateTimeField(auto_now_add=True)
     date_updated = models.DateTimeField(auto_now=True, blank=True, null=True)
     contract_status = models.CharField(max_length=128,
@@ -65,12 +66,12 @@ class Event(models.Model):
     """
     A model that represents an event
     """
-    client = models.ForeignKey(Client, on_delete=models.DO_NOTHING)
-    contract = models.ForeignKey(Contract, on_delete=models.DO_NOTHING)
+    client = models.ForeignKey(Client, on_delete=models.RESTRICT)
+    contract = models.ForeignKey(Contract, on_delete=models.RESTRICT)
     date_created = models.DateTimeField(auto_now_add=True)
     date_updated = models.DateTimeField(auto_now=True, blank=True, null=True)
     support_contact = models.ForeignKey(settings.AUTH_USER_MODEL,
-                                      on_delete=models.DO_NOTHING)
+                                      on_delete=models.SET_NULL, null=True)
     event_status = models.CharField(max_length=128,
                                     choices=EVENTS_STATUS_CHOICES,
                                     default="CREATED")

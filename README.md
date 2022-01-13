@@ -8,6 +8,12 @@ Développez une architecture back-end sécurisée en utilisant Django ORM.
 
 Le langage utilisé est Python et les frameworks sont Django et Django-Rest Framework (DRF).
 
+## Documentation
+
+La documentation (en anglais) de l'API SoftDesk est disponible en cliquant sur le logo ci-dessous:
+<a href="https://documenter.getpostman.com/view/16167513/UVXhrcyp">
+<img src="https://www.postman.com/assets/logos/pm-orange-logo-horiz.svg" />
+</a>
 
 ## Pré-requis
 
