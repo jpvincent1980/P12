@@ -5,6 +5,7 @@ from rest_framework.viewsets import ModelViewSet
 from .models import Client, Contract, Event
 from .serializers import ClientSerializer, ContractSerializer, EventSerializer
 from .permissions import IsSalesContact, IsSupportContact
+from accounts.permissions import IsManager
 
 
 logger = logging.getLogger(__name__)
@@ -17,7 +18,7 @@ class ClientViewSet(ModelViewSet):
     """
     queryset = Client.objects.all()
     serializer_class = ClientSerializer
-    permission_classes = [IsSalesContact]
+    permission_classes = [IsSalesContact|IsManager]
 
 
 class ContractViewSet(ModelViewSet):
@@ -27,7 +28,7 @@ class ContractViewSet(ModelViewSet):
     """
     queryset = Contract.objects.all()
     serializer_class = ContractSerializer
-    permission_classes = [IsSalesContact]
+    permission_classes = [IsSalesContact|IsManager]
 
 
 class EventViewSet(ModelViewSet):
@@ -37,6 +38,6 @@ class EventViewSet(ModelViewSet):
     """
     queryset = Event.objects.all()
     serializer_class = EventSerializer
-    permission_classes = [IsSalesContact|IsSupportContact]
+    permission_classes = [IsSalesContact|IsSupportContact|IsManager]
 
 

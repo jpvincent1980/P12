@@ -10,3 +10,73 @@ C:\Users\Jean-Philippe\OpenClassRooms\P12\epicevents\settings.py changed, reload
 Watching for file changes with StatReloader
 C:\Users\Jean-Philippe\OpenClassRooms\P12\epicevents\settings.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+No attribute called sales_contact
+Traceback (most recent call last):
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\crm\permissions.py", line 28, in has_object_permission
+    return obj.client.sales_contact == request.user
+AttributeError: 'Client' object has no attribute 'client'
+Forbidden: /api/v1/clients/1/
+C:\Users\Jean-Philippe\OpenClassRooms\P12\accounts\permissions.py changed, reloading.
+Watching for file changes with StatReloader
+No attribute called sales_contact
+Traceback (most recent call last):
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\crm\permissions.py", line 28, in has_object_permission
+    return obj.client.sales_contact == request.user
+AttributeError: 'Client' object has no attribute 'client'
+Forbidden: /api/v1/clients/1/
+C:\Users\Jean-Philippe\OpenClassRooms\P12\accounts\permissions.py changed, reloading.
+Watching for file changes with StatReloader
+No attribute called sales_contact
+Traceback (most recent call last):
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\crm\permissions.py", line 28, in has_object_permission
+    return obj.client.sales_contact == request.user
+AttributeError: 'Client' object has no attribute 'client'
+Forbidden: /api/v1/clients/1/
+No attribute called sales_contact
+Traceback (most recent call last):
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\crm\permissions.py", line 28, in has_object_permission
+    return obj.client.sales_contact == request.user
+AttributeError: 'Client' object has no attribute 'client'
+Forbidden: /api/v1/clients/1/
+C:\Users\Jean-Philippe\OpenClassRooms\P12\accounts\permissions.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Jean-Philippe\OpenClassRooms\P12\accounts\permissions.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Jean-Philippe\OpenClassRooms\P12\accounts\permissions.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Jean-Philippe\OpenClassRooms\P12\crm\views.py changed, reloading.
+Watching for file changes with StatReloader
+No attribute called sales_contact
+Traceback (most recent call last):
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\crm\permissions.py", line 28, in has_object_permission
+    return obj.client.sales_contact == request.user
+AttributeError: 'Client' object has no attribute 'client'
+No attribute called sales_contact
+Traceback (most recent call last):
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\crm\permissions.py", line 28, in has_object_permission
+    return obj.client.sales_contact == request.user
+AttributeError: 'Client' object has no attribute 'client'
+No attribute called sales_contact
+Traceback (most recent call last):
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\crm\permissions.py", line 28, in has_object_permission
+    return obj.client.sales_contact == request.user
+AttributeError: 'Client' object has no attribute 'client'
+No attribute called sales_contact
+Traceback (most recent call last):
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\crm\permissions.py", line 28, in has_object_permission
+    return obj.client.sales_contact == request.user
+AttributeError: 'Client' object has no attribute 'client'
+No attribute called sales_contact
+Traceback (most recent call last):
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\crm\permissions.py", line 28, in has_object_permission
+    return obj.client.sales_contact == request.user
+AttributeError: 'Client' object has no attribute 'client'
+No attribute called sales_contact
+Traceback (most recent call last):
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\crm\permissions.py", line 28, in has_object_permission
+    return obj.client.sales_contact == request.user
+AttributeError: 'Client' object has no attribute 'client'
+C:\Users\Jean-Philippe\OpenClassRooms\P12\crm\views.py changed, reloading.
+Watching for file changes with StatReloader
