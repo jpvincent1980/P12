@@ -4,5 +4,20 @@ from django.contrib.auth.admin import UserAdmin
 from .models import CustomUser
 
 
-admin.site.register(CustomUser, UserAdmin)
+class CustomUserAdmin(UserAdmin):
+    list_display = (
+        'username', 'email', 'first_name', 'last_name',
+        'is_staff', 'department')
+    fieldsets = UserAdmin.fieldsets + (
+        ('Department', {
+            'fields': ('department',),
+        }),
+    )
+    add_fieldsets = UserAdmin.add_fieldsets + (
+        ('Department', {
+            'fields': ('department',),
+        }),
+    )
 
+
+admin.site.register(CustomUser, CustomUserAdmin)

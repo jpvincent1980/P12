@@ -29,5 +29,5 @@ class CustomUser(AbstractUser):
         return self.first_name + " " + self.last_name
 
     class Meta:
-        ordering = ["last_name", ]
+        ordering = ["-id", ]
         verbose_name = "Utilisateur"
