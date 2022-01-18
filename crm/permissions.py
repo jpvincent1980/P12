@@ -21,7 +21,7 @@ class IsSalesContact(BasePermission):
     client's contract and client's event data
     """
     def has_permission(self, request, view):
-        return request.user.is_authenticated
+        return request.user.department == "SALES"
 
     def has_object_permission(self, request, view, obj):
         try:
@@ -37,7 +37,7 @@ class IsSupportContact(BasePermission):
     events' data
     """
     def has_permission(self, request, view):
-        return request.user.is_authenticated
+        return request.user.department == "SUPPORT"
 
     def has_object_permission(self, request, view, obj):
         return obj.support_contact == request.user

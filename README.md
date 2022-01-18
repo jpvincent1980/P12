@@ -35,6 +35,25 @@ sous Windows -> ``env/Scripts/activate.bat``
 
 sous Mac/Linux -> ``source/env/bin/activate``
 
+## Base de données PostgreSQL
+
+L'application Epic Events fonctionne avec une base de données PostgreSQL.
+
+Si PostgreSql n'est pas installé sur votre poste, suivez la marche à suivre au lien suivant.
+
+Une fois PostgreSQL installée sur votre poste, créez une nouvelle base de données avec les paramètres suivants:
+
+``Nom de la base -> EPICDB``
+
+``Utilisateur -> epicuser``
+
+``Mot de passe -> EPICPASSWORD``
+
+``Host -> localhost``
+
+``Port -> 5432``
+
+
 ## Démarrage
 
 Toujours dans le même terminal et au niveau du répertoire contenant le fichier ``manage.py`` du projet, tapez la commande ci-dessous:
@@ -47,7 +66,7 @@ puis rendez-vous à l'adresse ci-dessous dans votre navigateur :
 
 Vous trouverez ci-dessous un compte utilisateur disponible pour tester l'API SoftDesk :
 
-email -> ``johnsteed@hotmail.com`` / Mot de Passe -> ``theavengers``
+username -> ``epicuser`` / Mot de Passe -> ``EPICPASSWORD``
 
 
 ## IDE utilisé
