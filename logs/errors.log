@@ -424,3 +424,63 @@ C:\Users\Jean-Philippe\OpenClassRooms\P12\accounts\admin.py changed, reloading.
 Watching for file changes with StatReloader
 C:\Users\Jean-Philippe\OpenClassRooms\P12\accounts\admin.py changed, reloading.
 Watching for file changes with StatReloader
+Forbidden: /api/v1/events/1/
+Forbidden: /api/v1/users/
+Forbidden: /api/v1/events/2/
+Forbidden: /api/v1/contracts/3/
+Internal Server Error: /api/v1/contracts/3/
+Traceback (most recent call last):
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\rest_framework\views.py", line 415, in initial
+    self.check_permissions(request)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\rest_framework\views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\rest_framework\permissions.py", line 75, in has_permission
+    self.op1.has_permission(request, view) or
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\crm\permissions.py", line 24, in has_permission
+    return request.user.department == "SALES"
+AttributeError: 'AnonymousUser' object has no attribute 'department'
+Internal Server Error: /api/v1/contracts/2/
+Traceback (most recent call last):
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\rest_framework\views.py", line 415, in initial
+    self.check_permissions(request)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\rest_framework\views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\rest_framework\permissions.py", line 75, in has_permission
+    self.op1.has_permission(request, view) or
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\crm\permissions.py", line 24, in has_permission
+    return request.user.department == "SALES"
+AttributeError: 'AnonymousUser' object has no attribute 'department'
+C:\Users\Jean-Philippe\OpenClassRooms\P12\crm\models.py changed, reloading.
+Watching for file changes with StatReloader

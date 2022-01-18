@@ -64,10 +64,6 @@ puis rendez-vous à l'adresse ci-dessous dans votre navigateur :
 
 ``http://127.0.0.1:8000/`` ou ``http://localhost:8000``
 
-Vous trouverez ci-dessous un compte utilisateur disponible pour tester l'API SoftDesk :
-
-username -> ``epicuser`` / Mot de Passe -> ``EPICPASSWORD``
-
 
 ## IDE utilisé
 

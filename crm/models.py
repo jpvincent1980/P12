@@ -59,6 +59,7 @@ class Contract(models.Model):
         return "Contrat # " + str(self.id)
 
     class Meta:
+        ordering = ["-id", ]
         verbose_name = "Contrat"
 
 
@@ -83,5 +84,6 @@ class Event(models.Model):
         return "Evénement # " + str(self.id)
 
     class Meta:
+        ordering = ["-id", ]
         verbose_name = "Evénement"
 
