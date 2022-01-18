@@ -43,15 +43,15 @@ Si PostgreSql n'est pas installé sur votre poste, suivez la marche à suivre au
 
 Une fois PostgreSQL installée sur votre poste, créez une nouvelle base de données avec les paramètres suivants:
 
-``Nom de la base -> EPICDB``
+Nom de la base -> ``EPICDB``
 
-``Utilisateur -> epicuser``
+Utilisateur -> ``epicuser``
 
-``Mot de passe -> EPICPASSWORD``
+Mot de passe -> ``EPICPASSWORD``
 
-``Host -> localhost``
+Host -> ``localhost``
 
-``Port -> 5432``
+Port -> ``5432``
 
 
 ## Démarrage
