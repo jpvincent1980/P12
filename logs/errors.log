@@ -484,3 +484,129 @@ Traceback (most recent call last):
 AttributeError: 'AnonymousUser' object has no attribute 'department'
 C:\Users\Jean-Philippe\OpenClassRooms\P12\crm\models.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+No attribute called sales_contact
+Traceback (most recent call last):
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\crm\permissions.py", line 28, in has_object_permission
+    return obj.client.sales_contact == request.user
+AttributeError: 'Client' object has no attribute 'client'
+No attribute called sales_contact
+Traceback (most recent call last):
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\crm\permissions.py", line 28, in has_object_permission
+    return obj.client.sales_contact == request.user
+AttributeError: 'Client' object has no attribute 'client'
+No attribute called sales_contact
+Traceback (most recent call last):
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\crm\permissions.py", line 28, in has_object_permission
+    return obj.client.sales_contact == request.user
+AttributeError: 'Client' object has no attribute 'client'
+Forbidden: /api/v1/users/
+Forbidden: /api/v1/contracts/
+Forbidden: /api/v1/clients/
+Not Found: /favicon.ico
+C:\Users\Jean-Philippe\OpenClassRooms\P12\accounts\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Jean-Philippe\OpenClassRooms\P12\accounts\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Jean-Philippe\OpenClassRooms\P12\accounts\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/accounts/customuser/6/change/
+Traceback (most recent call last):
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\forms\forms.py", line 168, in __getitem__
+    field = self.fields[name]
+KeyError: 'id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 176, in render
+    return self._render(context)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\loader_tags.py", line 153, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\loader_tags.py", line 201, in render
+    return template.render(context)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 178, in render
+    return self._render(context)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 168, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 977, in render
+    return SafeString(''.join([
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 978, in <listcomp>
+    node.render_annotated(context) for node in self
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\defaulttags.py", line 214, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\base.py", line 938, in render_annotated
+    return self.render(context)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\template\defaulttags.py", line 170, in render
+    values = list(values)
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\contrib\admin\helpers.py", line 121, in __iter__
+    yield AdminField(self.form, field, is_first=(i == 0))
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\contrib\admin\helpers.py", line 133, in __init__
+    self.field = form[field]  # A django.forms.BoundField instance
+  File "C:\Users\Jean-Philippe\OpenClassRooms\P12\env\lib\site-packages\django\forms\forms.py", line 170, in __getitem__
+    raise KeyError(
+KeyError: "Key 'id' not found in 'CustomUserForm'. Choices are: date_joined, department, email, first_name, groups, is_active, is_staff, is_superuser, last_login, last_name, password, user_permissions, username."
+C:\Users\Jean-Philippe\OpenClassRooms\P12\accounts\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Forbidden: /api/v1/users/7/
+Forbidden: /api/v1/events/2/
+C:\Users\Jean-Philippe\OpenClassRooms\P12\crm\permissions.py changed, reloading.
+Watching for file changes with StatReloader

@@ -6,15 +6,6 @@ from rest_framework.permissions import BasePermission, SAFE_METHODS
 logger = logging.getLogger(__name__)
 
 
-class IsAdminOrReadOnly(BasePermission):
-    """
-    The request is authenticated as an Adminuser, or is a read-only request.
-    """
-
-    def has_permission(self, request, view):
-        return request.method in SAFE_METHODS or request.user.is_superuser
-
-
 class IsSalesContact(BasePermission):
     """
     Custom permission to allow sales contact to update their client,
